@@ -1,0 +1,44 @@
+/* reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+/* header */
+
+.barra-superior {
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    background-color: #F0A83E;
+    color: #fff;
+}
+
+nav span {
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;       
+}
+
+/* main */
+
+.banner {
+    background-image: url(../img/portada.png);
+    background-size: cover;
+    height: 400px;   
+}
+
+
+/* footer */

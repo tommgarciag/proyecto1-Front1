@@ -1,84 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">    
-    <title>PetShop</title>    
+  <head>
+    <meta charset="UTF-8" />
+    <title>PetShop</title>
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header>
-        <!-- Barra superior -->
-        <div class="barra-superior">
-            <p>Grandes ofertas en comederos</p>
-            <ul>
-                <li>Español</li>
-                <li>ARS</li>
-            </ul>
+      <!-- Barra superior -->
+      <div class="barra-superior">
+        <div class="container">
+          <p>Grandes ofertas en comederos</p>
+          <ul>
+            <li>Español<i class="fas fa-chevron-down"></i></li>
+            <li>ARS<i class="fas fa-chevron-down"></i></li>
+          </ul>
         </div>
-        <!-- Barra de menu principal -->
-        <nav>
-            <h1><span>Front</span>Cat&Dog</h1>
-            <ul>
-                <li>
-                    <i class="fas fa-paw"></i>
-                    <a href="#">Categorias</a>
-                </li>
-                <li>
-                    <i class="fas fa-paw"></i>
-                    <a href="#">Pets</a>
-                </li>
-                <li>
-                    <i class="fas fa-paw"></i>
-                    <a href="#">Nosotros</a>
-                </li>
-                <li>    
-                    <i class="fas fa-paw"></i>
-                    <a href="#">Contactanos</a>
-                </li>                
-            </ul>
-        </nav>
+      </div>
+      <!-- Barra de menu principal -->
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo.png" alt="Logo" />
+          </div>
+
+          <ul class="nav-links">
+            <li>
+              <i class="fas fa-paw"></i>
+              <a href="#">Categorias</a>
+            </li>
+            <li>
+              <i class="fas fa-paw"></i>
+              <a href="#">Pets</a>
+            </li>
+            <li>
+              <i class="fas fa-paw"></i>
+              <a href="#">Nosotros</a>
+            </li>
+            <li>
+              <i class="fas fa-paw"></i>
+              <a href="#">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Seccion banner -->
-        <section class="banner">            
-            <h2>¡Es un placer tenerte aquí!</h2>
-            <p>¡Comederos en descuento!</p>
-            <a href="#">COMEDEROS</a>
-        </section>
-        <!-- Seccion productos -->
-        <section>
-            <img src="img/patita2.png" alt="imagen patita">
+      <!-- Seccion banner -->
+      <section class="banner">
+        <div class="caption">
+          <h2>¡Es un placer tenerte aquí!</h2>
+          <p>¡Comederos en descuento!</p>
+          <a href="#">COMEDEROS</a>
+        </div>
+      </section>
+      <!-- Seccion productos -->
+      <section class="productos">
+        <div class="container">
+          <div class="productos-header">
+            <img src="img/patita2.png" alt="imagen patita" />
             <h1>Productos destacados</h1>
             <a href="#">Comederos</a>
             <a href="#">Accesorios</a>
             <a href="#">Comida</a>
+          </div>
+          <div class="productos-articulos">
+            <article>
+              <img src="img/churrasquito.png" alt="imagen churrasquito" />
+              <h4>Juguete Churrasquito</h4>
+              <p>$150</p>
+            </article>
+            <article>
+              <img src="img/comedero.png" alt="imagen comedero" />
+              <h4>Comederos para perro</h4>
+              <p>$250</p>
+            </article>
+            <article>
+              <img src="img/huesito.png" alt="imagen huesito" />
+              <h4>Juguete Huesito</h4>
+              <p>$250</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Seccion contacto -->
+      <section class="contacto">
+        <!-- to do: formulario -->
 
-            <article>
-                <img src="img/churrasquito.png" alt="imagen churrasquito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
-            </article>                
-            <article>
-                <img src="img/comedero.png" alt="imagen comedero">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
-            </article>
-            <article>
-                <img src="img/huesito.png" alt="imagen huesito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
-            </article>
-        </section>
+        <!-- to di: newsletter -->
+
+        <div class="contacto-links">
+          <div class="container">
+            <div class="links">
+              <div class="link-item">
+                <img src="img/location.png" alt="icono de ubicacion" />
+                <div>
+                  <h5>Localidad</h5>
+                  <p>Calle - provincia</p>
+                </div>
+              </div>
+              <div class="link-item">
+                <img src="img/telefono.png" alt="icono de telefono" />
+                <div>
+                  <h5>Teléfono</h5>
+                  <p>Número de teléfono</p>
+                </div>
+              </div>
+              <div class="link-item">
+                <img src="img/correo.png" alt="icono de correo electronico" />
+                <div>
+                  <h5>Correo Electrónico</h5>
+                  <p>Dirección de correo</p>
+                </div>
+              </div>
+            </div>
+            <div class="sublogo">
+              <img src="img/sublogo.png" alt="Sublogo" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Todos los derechos reservados</p>
+      <p>Todos los derechos reservados</p>
     </footer>
-
-</body>
+  </body>
 </html>

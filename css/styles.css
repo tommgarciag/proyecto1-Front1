@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 /* reset */
 
 * {
@@ -5,26 +8,33 @@
     margin: 0;
 }
 
-
-
 /* header */
 
 .barra-superior {
     background-color: #000;
-    color: #fff;
+    color: #fff;   
+    padding: 5px 0;    
 }
 
-nav {
-    background-color: #F0A83E;
-    color: #fff;
+.barra-superior .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;    
 }
 
-nav span {
-    color: #000;
+.barra-superior .container ul {
+    display: flex; 
 }
 
-li {
+.barra-superior .container ul li {
+    margin-left: 5px; 
     list-style: none;
+}
+
+.barra-superior .container ul li i {
+    margin-left: 5px;
+    font-size: 15px;
 }
 
 ul li a {
@@ -32,13 +42,171 @@ ul li a {
     color: #fff;       
 }
 
+nav {
+    background-color: #F0A83E;
+    color: #fff;    
+    padding: 25px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+}
+
+nav .nav-links {
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 30px;
+    list-style: none;
+}
+
+
+
 /* main */
 
 .banner {
     background-image: url(../img/portada.png);
     background-size: cover;
-    height: 400px;   
+    height: 400px; 
+    font-family: 'Roboto', sans-serif;
+      
 }
 
+.banner .caption {
+    width: 50%;
+    height: 100%;     
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    float: right;
+}
+
+.banner .caption h2 {
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.banner .caption p {    
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.banner .caption a {
+    background-color: #F0A83E; 
+    color: #fff;   
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 23px;
+
+}
+
+.productos .container {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.productos-header {
+    text-align: center;
+}
+
+.productos-header h1 {
+    color: #3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.productos-header a {    
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 20px;
+    text-decoration: none;
+    
+}
+
+.productos-articulos {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productos-articulos article {
+    background-color: #FBFAF6;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.productos-articulos article h4 {
+    color: #3C2313;    
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.productos-articulos article p {
+    color: #F0A83E;    
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.contacto-links {
+    background-color: #3C2313;
+    height: auto;
+}
+
+.contacto-links .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 90%;
+}
+
+.link-item {
+    display: flex;    
+    align-items: center;   
+    color: #fff;    
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.link-item div {
+    margin-left: 30px;
+}
+
+.link-item div h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.link-item div p {
+    color: #8A8787;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
 
 /* footer */
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}

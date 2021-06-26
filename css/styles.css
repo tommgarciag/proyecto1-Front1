@@ -207,6 +207,9 @@ nav .nav-links li {
 footer {
     background-color: #222222;
     color: #fff;
-    text-align: center;
+    text-align: center;    
+}
+
+footer p {
     padding: 5px;
 }
